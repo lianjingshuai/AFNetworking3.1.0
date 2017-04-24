@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  KuangJia
+//
+//  Created by 连京帅 on 16/6/22.
+//  Copyright © 2016年 LJS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 头文件
+#include "AFNetworking.h"
+
+//屏幕宽高
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+// 宏定义
+
+
+
+
+
+#endif /* PrefixHeader_pch */
+
+// 打印
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
